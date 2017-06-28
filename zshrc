@@ -9,8 +9,8 @@ SAVEHIST=20000
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.dotfiles/zsh/aliases
-source $HOME/.dotfiles/zsh/functions
+source $HOME/dev/dotfiles/zsh/aliases
+source $HOME/dev/dotfiles/zsh/functions
 
 # Completions
 source ~/.rbenv/completions/rbenv.zsh
