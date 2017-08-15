@@ -22,6 +22,12 @@ export GOPATH="$HOME/dev/go"
 export UNBUNDLED_COMMANDS=(knife)
 export PATH="$PATH:$HOME/.chefdk/gem/ruby/2.3.0/bin"
 
+#MySql
+export PATH="$PATH:/usr/local/Cellar/mysql@5.6/5.6.36_1/bin"
+
 # Rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+alias vim="/usr/local/bin/vim"
+alias ctags="`brew --prefix`/bin/ctags"
