@@ -21,6 +21,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'thoughtbot/vim-rspec'
 Plug 'craigemery/vim-autotag'
+Plug 'skwp/vim-spec-finder'
 
 call plug#end()
 
@@ -32,6 +33,7 @@ let mapleader = "\<Space>"
 nnoremap <leader>\ :vsplit<cr>
 nnoremap <leader><leader> <C-w><C-w>
 nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>o :RelatedSpecVOpen<CR>
 
 nnoremap <leader>v :source ~/.vimrc<CR>
 nnoremap <leader>w :w<CR>
