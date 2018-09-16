@@ -1,33 +1,3 @@
 [user]
 	name = Mark Provan
 	email = markgprovan@gmail.com
-
-[color]
-	diff = auto
-	status = auto
-	branch = auto
-
-[core]
-	excludesfile = ~/.gitignore
-	editor = vim --noplugin
-
-[apply]
-	whitespace = nowarn
-
-[alias]
-      lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-[help]
-	autocorrect = 1
-[branch]
-	autosetupmerge = true
-  autosetuprebase = always
-[push]
-	default = current
-[rerere]
-	enabled = 1
-[github]
-	user = markprovan
-[merge]
-  ff = only
-[fetch]
-  prune = true

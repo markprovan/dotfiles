@@ -1,33 +1,33 @@
-export ZSH=/Users/mark/.oh-my-zsh
-ZSH_THEME="cobalt2"
+source /usr/local/share/antigen/antigen.zsh
 
 # Save a ton of history
 HISTSIZE=20000
 HISTFILE=~/.zsh_history
 SAVEHIST=20000
 
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
 source $HOME/dev/dotfiles/zsh/aliases
 source $HOME/dev/dotfiles/zsh/functions
 
 # Completions
 source ~/.rbenv/completions/rbenv.zsh
 
-# Golang
-export GOPATH="$HOME/dev/go"
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle heroku
+antigen bundle nvm
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen theme robbyrussell
 
-# ChefDK
-export UNBUNDLED_COMMANDS=(knife)
-export PATH="$PATH:$HOME/.chefdk/gem/ruby/2.3.0/bin"
+antigen apply
 
-#MySql
-export PATH="$PATH:/usr/local/Cellar/mysql@5.6/5.6.36_1/bin"
 
 # Rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-alias vim="/usr/local/bin/vim"
-alias ctags="`brew --prefix`/bin/ctags"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
