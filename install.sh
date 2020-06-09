@@ -18,21 +18,20 @@ if ! command -v brew >/dev/null; then
     export PATH="/usr/local/bin:$PATH"
 fi
 
-fancy_echo "Running Homebrew Bundle"
-brew bundle
-
-fancy_echo "Linking Homebrew SSL"
-ln -s /usr/local/Cellar/openssl/VERSION/bin/openssl /usr/local/bin/openssl
-
 fancy_echo "Installing Vim Plugged"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 fancy_echo "Linking files"
-ln -s zshrc ~/.zshrc
+ln -s zsh/zshrc ~/.zshrc
+ln -s zsh/zsh_aliases ~/.zsh_aliases
+ln -s zsh/zsh_plugins ~/.zsh_plugins
+
 ln -s vimrc ~/.vimrc
+
+ln -s gitconfig ~/.gitconfig
 
 fancy_echo "Creating zsh_history..."
 touch ~/.zsh_history
 
-fancy_echo "Done!"
+fancy_echo "Done! Start a new prompt and run antibody"

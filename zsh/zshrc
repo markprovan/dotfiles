@@ -1,0 +1,8 @@
+source ~/.zsh_plugins.sh
+source ~/.zsh_aliases.sh
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#0e687f"
+
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+export HISTFILE=~/.zsh_history

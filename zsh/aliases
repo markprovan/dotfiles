@@ -1,9 +1,0 @@
-alias rake="noglob rake"
-
-
-alias g="git status"
-alias gadd="git add ."
-alias co="git commit -am"
-alias pu="git push"
-
-alias vim="/usr/local/bin/vim"
